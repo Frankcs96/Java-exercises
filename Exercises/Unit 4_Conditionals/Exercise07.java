@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Exercise07 {
 	
-	public static void main (String[] args) {
+  public static void main (String[] args) {
     Scanner sc = new Scanner(System.in);
     System.out.println("***Calculating average of 3 grades***");
     System.out.println("Enter grade 1: ");
@@ -15,6 +15,6 @@ public class Exercise07 {
     double average = (grade1 + grade2 + grade3) / 3;
     
     System.out.printf("Average: %.2f",average);
-	}
+  }
 }
 
