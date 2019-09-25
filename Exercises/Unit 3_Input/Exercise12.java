@@ -6,11 +6,11 @@ public class Exercise12 {
   public static void main (String[] args) {
     Scanner sc = new Scanner(System.in);
     
-    System.out.println("insert the Grade of your first exam");
+    System.out.println("Enter the Grade of your first exam");
     double firstExam = sc.nextDouble();
     
     
-    System.out.println("What grade do you want to get in the trimester"); 
+    System.out.println("What grade do you want to get in the trimester?"); 
     double trimesterGrade = sc.nextDouble();
       
     
