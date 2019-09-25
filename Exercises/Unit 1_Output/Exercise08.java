@@ -7,5 +7,5 @@ public class Exercise08 {
     System.out.println("   * *");
     System.out.println("    *");
 
-	}
+  }
 }
