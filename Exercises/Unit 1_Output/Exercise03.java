@@ -3,10 +3,10 @@
 
 public class Exercise03 {
 	
-	public static void main (String[] args) {
+  public static void main (String[] args) {
     System.out.printf("%-10s %s\n","Spanish","English");
     System.out.println("━━━━━━━━━━━━━━━━━━━━");
-		System.out.printf("%-10s %s\n","Rana","Frog");
+    System.out.printf("%-10s %s\n","Rana","Frog");
     System.out.printf("%-10s %s\n","Lobo","Wolf");
     System.out.printf("%-10s %s\n","Gato","Cat");
     System.out.printf("%-10s %s\n","Cebolla","Onion");
@@ -16,6 +16,6 @@ public class Exercise03 {
     System.out.printf("%-10s %s\n","Herradura","Horseshoe");
     System.out.printf("%-10s %s\n","Sol","Sun");
     System.out.printf("%-10s %s\n","Lanza","Spear");
-	}
+  }
 }
 
