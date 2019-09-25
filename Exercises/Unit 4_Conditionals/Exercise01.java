@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Exercise01 {
 	
-	public static void main (String[] args) {
+  public static void main (String[] args) {
     Scanner sc = new Scanner(System.in);
     
     System.out.println("Enter a day of the week to get your first subject of the day");
@@ -40,6 +40,6 @@ public class Exercise01 {
       
     }
     
-	}
+  }
 }
 
