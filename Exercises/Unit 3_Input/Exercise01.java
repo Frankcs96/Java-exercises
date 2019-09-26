@@ -13,9 +13,9 @@ public class Exercise01 {
     
     double number2 = sc.nextDouble();
     
-    double mult = number1 * number2;
+    double multiplication = number1 * number2;
     
-    System.out.println("The multiplication of the two numbers is " + mult); 
+    System.out.println("The multiplication of the two numbers is " + multiplication); 
   }
 }
 

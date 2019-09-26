@@ -10,8 +10,8 @@ public class Exercise05 {
     System.out.println("Enter the value of b: ");
     double b = sc.nextDouble();
     
-    double solution = -b/a;
-    if(a==0) {
+    double solution = -b / a;
+    if(a == 0) {
       System.out.println("This equation has no real solution");
     }
     else {

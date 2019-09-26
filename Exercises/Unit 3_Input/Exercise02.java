@@ -8,11 +8,11 @@ public class Exercise02 {
     System.out.println("Insert an amount in euros");
     double euros = sc.nextDouble();
     
-    double pesetas = euros*166.386;
+    double pesetas = euros * 166.386;
     
     System.out.println("Exchanging...");
     
-    System.out.println("You have " + pesetas + " pesetas");
+    System.out.println("You have " + (int)pesetas + " pesetas");
   }
 }
 

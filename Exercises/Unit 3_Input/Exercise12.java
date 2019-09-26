@@ -17,7 +17,7 @@ public class Exercise12 {
     // trimesterGrade = firstExam *0.4 + secondExam * 0.6
     // trimesterGrade - firstExam*0.4 /0.6 = secondExam
     
-    double secondExam = ((trimesterGrade - firstExam*0.4)/0.6);
+    double secondExam = ((trimesterGrade - firstExam * 0.4) / 0.6);
     
     
     
