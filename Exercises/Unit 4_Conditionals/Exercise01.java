@@ -11,32 +11,32 @@ public class Exercise01 {
     
     if(day.equals("monday")) {
       
-        System.out.println("First subject: PRO");
+      System.out.println("First subject: PRO");
     }
     
     else if(day.equals("tuesday")) {
       
-        System.out.println("First subject: EDD");
+      System.out.println("First subject: EDD");
     }
     
     else if(day.equals("wednesday")) {
       
-        System.out.println("First subject: PRO");
+      System.out.println("First subject: PRO");
     }
     
     else if(day.equals("thursday")) {
-      
-        System.out.println("First subject: PRO");
+    
+      System.out.println("First subject: PRO");
     }
     
     else if(day.equals("friday")) {
       
-        System.out.println("First subject: SINF");
+      System.out.println("First subject: SINF");
     }
     
     else {
       
-        System.out.println("Error, you have to enter a day of the week between Monday and Friday");
+      System.out.println("Error, you have to enter a day of the week between Monday and Friday");
       
     }
     
