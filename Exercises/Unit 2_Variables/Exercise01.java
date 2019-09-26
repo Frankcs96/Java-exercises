@@ -10,10 +10,10 @@ public class Exercise01 {
     
     System.out.println("X: " + x);
     System.out.println("Y: " + y);
-    System.out.println("Sum: " + (x+y));
-    System.out.println("Subtraction: " + (x-y));
-    System.out.println("Multiplication: " + (x*y));
-    System.out.println("Division: " + ((double)x/(double)y));
+    System.out.println("Sum: " + (x + y));
+    System.out.println("Subtraction: " + (x - y));
+    System.out.println("Multiplication: " + (x * y));
+    System.out.println("Division: " + ((double)x /(double)y));
     
   }
 }
