@@ -4,7 +4,7 @@ public class Exercise09 {
 
   public static void main (String[] args) {
     Scanner sc = new Scanner(System.in);
-    System.out.println("***Second grade equation solver (ax^2 + bx + c = 0)***");
+    System.out.println("***Quadratic equation solver (ax^2 + bx + c = 0)***");
     System.out.println("Enter value of a");
     double a = sc.nextDouble();
     System.out.println("Enter value of b");
