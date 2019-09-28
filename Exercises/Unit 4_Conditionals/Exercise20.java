@@ -25,8 +25,8 @@ public class Exercise20 {
     }
     
     if ((number >= 1000) && (number <= 9999)) {
-      if ((number % 10) == (number / 100)) {
-        isPalindromic = true;
+      if ((number % 10) == (number / 1000) && ) {
+        isPalindromic = true; 
       }
     }
 

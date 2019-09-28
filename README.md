@@ -1,5 +1,7 @@
 # Java exercises :coffee:
-Java exercises from "Aprende java con ejercicios"
+Java exercises from the book "Aprende java con ejercicios"
+
+Author: <a href="https://github.com/LuisJoseSanchez">Luis José Sánchez</a>
 
 <a href="https://leanpub.com/aprendejava">![Aprende Java con Ejercicios](Book.png)</a>
 
