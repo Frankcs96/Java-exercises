@@ -7,7 +7,7 @@ public class Exercise11 {
     Scanner sc = new Scanner(System.in);
     
     System.out.println("****Kb to Mb converter****");
-    System.out.println("Enter Kb");
+    System.out.println("Enter how many Kb you want to convert");
     double kb = sc.nextDouble();
     
     double mb = kb / 1000;

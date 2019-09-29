@@ -5,7 +5,7 @@ public class Exercise03 {
 
   public static void main (String[] args) {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Insert an amount in pesetas");
+    System.out.println("Enter an amount in pesetas");
     double pesetas = sc.nextDouble();
     
     double euros = pesetas/166.386;

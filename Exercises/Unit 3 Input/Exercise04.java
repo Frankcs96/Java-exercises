@@ -5,10 +5,10 @@ public class Exercise04 {
 
   public static void main (String[] args) {
     Scanner sc = new Scanner(System.in);
-    System.out.println("Insert a number");
+    System.out.println("Enter a number");
     double number1 = sc.nextDouble();
     
-    System.out.println("Insert another number");
+    System.out.println("Enter another number");
     double number2 = sc.nextDouble();
     
     System.out.println("The sum of the two numbers is " + (number1 + number2));

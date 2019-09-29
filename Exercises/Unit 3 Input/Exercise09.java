@@ -8,9 +8,9 @@ public class Exercise09 {
     
     System.out.println("****Cone volume Calculator****");
     
-    System.out.println("Insert height (cm)");
+    System.out.println("Enter height (cm)");
     double height = sc.nextDouble();
-    System.out.println("Insert Radius (cm)");
+    System.out.println("Enter Radius (cm)");
     double radius = sc.nextDouble();
     
     double volume = (1.0 / 3.0) * Math.PI * Math.pow(radius,2.0) * height;
