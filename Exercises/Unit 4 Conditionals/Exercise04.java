@@ -11,10 +11,9 @@ public class Exercise04 {
     
     if(hours <= 40) {
       salary = 12 * hours;
-    }
-    else {
+    } else {
       salary = (12 * 40) + (16 * extra);
-    }
+    }  
     
     System.out.println("Your salary this week is " + salary + " euros");
   }

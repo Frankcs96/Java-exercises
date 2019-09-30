@@ -21,11 +21,12 @@ public class Exercise02 {
     else if(hour >= 21 && hour <= 23 || hour <= 5 && hour >= 0) {
       
       System.out.println("Good evening");
-    }
-    
-    else {
       
+    } else {
       System.out.println("Error... Enter a valid answer (0-23)");
-    }
+    } 
+    
+      
+    
   }
 }

@@ -32,13 +32,14 @@ public class Exercise01 {
     else if(day.equalsIgnoreCase("friday")) {
       
       System.out.println("First subject: SINF");
-    }
-    
-    else {
+      
+    } else {
       
       System.out.println("Error, you have to enter a day of the week between Monday and Friday");
       
-    }
+    }  
+    
+   
     
   }
 }

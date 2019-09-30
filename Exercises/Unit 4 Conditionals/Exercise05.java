@@ -13,8 +13,7 @@ public class Exercise05 {
     double solution = -b / a;
     if(a == 0) {
       System.out.println("This equation has no real solution");
-    }
-    else {
+    } else {
       System.out.println("x = " + solution);
     }
     
