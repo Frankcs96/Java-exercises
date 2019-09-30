@@ -13,12 +13,12 @@ public class Exercise02 {
       System.out.println("Good Morning!");
     }
     
-    else if(hour >= 13 && hour <= 20) {
+      else if(hour >= 13 && hour <= 20) {
       
       System.out.println("Good afternoon");
     }
     
-    else if(hour >= 21 && hour <= 23 || hour <= 5 && hour >= 0) {
+      else if(hour >= 21 && hour <= 23 || hour <= 5 && hour >= 0) {
       
       System.out.println("Good evening");
       

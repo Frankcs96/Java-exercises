@@ -14,22 +14,22 @@ public class Exercise01 {
       System.out.println("First subject: PRO");
     }
     
-    else if(day.equalsIgnoreCase("tuesday")) {
+      else if(day.equalsIgnoreCase("tuesday")) {
       
       System.out.println("First subject: EDD");
     }
     
-    else if(day.equalsIgnoreCase("wednesday")) {
+      else if(day.equalsIgnoreCase("wednesday")) {
       
       System.out.println("First subject: PRO");
     }
     
-    else if(day.equalsIgnoreCase("thursday")) {
+      else if(day.equalsIgnoreCase("thursday")) {
     
       System.out.println("First subject: PRO");
     }
     
-    else if(day.equalsIgnoreCase("friday")) {
+      else if(day.equalsIgnoreCase("friday")) {
       
       System.out.println("First subject: SINF");
       
