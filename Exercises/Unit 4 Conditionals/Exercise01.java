@@ -9,27 +9,27 @@ public class Exercise01 {
     String day = sc.nextLine().toLowerCase();
     
     
-    if(day.equals("monday")) {
+    if(day.equalsIgnoreCase("monday")) {
       
       System.out.println("First subject: PRO");
     }
     
-    else if(day.equals("tuesday")) {
+    else if(day.equalsIgnoreCase("tuesday")) {
       
       System.out.println("First subject: EDD");
     }
     
-    else if(day.equals("wednesday")) {
+    else if(day.equalsIgnoreCase("wednesday")) {
       
       System.out.println("First subject: PRO");
     }
     
-    else if(day.equals("thursday")) {
+    else if(day.equalsIgnoreCase("thursday")) {
     
       System.out.println("First subject: PRO");
     }
     
-    else if(day.equals("friday")) {
+    else if(day.equalsIgnoreCase("friday")) {
       
       System.out.println("First subject: SINF");
     }
