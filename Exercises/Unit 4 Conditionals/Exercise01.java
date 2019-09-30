@@ -6,7 +6,7 @@ public class Exercise01 {
     Scanner sc = new Scanner(System.in);
     
     System.out.println("Enter a day of the week to get your first subject of the day");
-    String day = sc.nextLine().toLowerCase();
+    String day = sc.nextLine();
     
     
     if(day.equalsIgnoreCase("monday")) {
