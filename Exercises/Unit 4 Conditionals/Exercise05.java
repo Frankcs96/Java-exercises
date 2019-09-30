@@ -11,7 +11,7 @@ public class Exercise05 {
     double b = sc.nextDouble();
     
     double solution = -b / a;
-    if(a == 0) {
+    if (a == 0) {
       System.out.println("This equation has no real solution");
     } else {
       System.out.println("x = " + solution);

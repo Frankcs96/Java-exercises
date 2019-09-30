@@ -7,7 +7,7 @@ public class Exercise03 {
     System.out.println("Enter a number between 1 and 7");
     int number = sc.nextInt();
     
-    switch(number) {
+    switch (number) {
     
       case 1:
         System.out.println("Monday");
