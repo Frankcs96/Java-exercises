@@ -15,7 +15,7 @@ public class Exercise05 {
       System.out.println("This equation has no real solution");
     } else {
       System.out.println("x = " + solution);
-    }
+    }                                               
     
   }
 }
