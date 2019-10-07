@@ -8,7 +8,7 @@ public class Exercise33 {
     
     for (int i = 1; i < height; i++) {
       System.out.print("* ");
-      for (int j = 2; j < height; j++) {
+      for (int j = 1; j < height - 1; j++) {
         System.out.print("  ");
         
       }
