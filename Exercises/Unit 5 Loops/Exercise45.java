@@ -1,6 +1,7 @@
+
 import java.util.Scanner;
 
-public class Exercise44 {
+public class Exercise45 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     
@@ -27,9 +28,9 @@ public class Exercise44 {
         newNumber = (newNumber * 10) + digit;
       } else {
         newNumber = (newNumber * 10) + (reversed % 10);
-        reversed /= 10;
+        
       }
-      
+      reversed /= 10;
       position--;
       
       
