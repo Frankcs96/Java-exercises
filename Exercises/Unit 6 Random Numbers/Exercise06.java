@@ -7,7 +7,7 @@ public class Exercise06 {
     int randomNumber = (int) ((Math.random() * ((100 - 0) + 1)) + 0);
     int answer = 0;
     System.out.println("I'm thinking about a number between 0 and 100, try to guess it");
-    System.out.println(randomNumber);
+    
     
     do {
       
