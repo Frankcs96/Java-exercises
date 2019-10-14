@@ -7,16 +7,19 @@ public class Exercise09 {
     System.out.println("****Digits counter****");
     System.out.println("Enter a number");
     
-    int number = sc.nextInt();
+    long number = sc.nextLong();
+    long copy = number;
     int digitCounter = 0;
     
-    for (int i = 1; i < number; i *= 10) {
+    while (number > 0) {
+      number /= 10;
       digitCounter++;
     }
     
-    // solution without loops int digitCounter = (int)(Math.log10(number)+1);
+    //solution without loops int digitCounter = (int)(Math.log10(number)+1);
     
-    System.out.println(number + " has " + digitCounter + " digits");
+    System.out.println(copy + " has " + digitCounter + " digits");
+
     
     
   }
