@@ -11,14 +11,14 @@ public class Exercise12 {
     
     for (int i = 0; i < number; i++) {
       if (i == 0) {
-        System.out.println(i);
+        System.out.print(i + " ");
         lastNum1 = i;
       } else if (i == 1) {
-        System.out.println(i);
+        System.out.print(i + " ");
         lastNum2 = i;
       } else {
         int sum = lastNum1 + lastNum2;
-        System.out.println(sum);
+        System.out.print(sum + " ");
         lastNum1 = lastNum2;
         lastNum2 = sum;
                
