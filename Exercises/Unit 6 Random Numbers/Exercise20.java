@@ -28,7 +28,6 @@ public class Exercise20 {
       
       System.out.println();
     }
-    
     System.out.println("The container has the capacity of " + height + " liters");
     System.out.println("and it's fill with " + randomCap + " liters of water");
   }
