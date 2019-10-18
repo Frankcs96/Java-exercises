@@ -56,17 +56,17 @@ public class Exercise27 {
       }
       
       if (player.equalsIgnoreCase("scissor") && computer.equals("paper")) {
-<<<<<<< HEAD
+
         System.out.println("player wins");
       }
       
-      //trying git in linux
-=======
+      //fixing
+
         System.out.println("Player wins");
       }
       
       
->>>>>>> 3fbeb258133f3c0a91d9869b036792477ad37459
+
         
       
       
