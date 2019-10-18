@@ -56,7 +56,7 @@ public class Exercise27 {
       }
       
       if (player.equalsIgnoreCase("scissor") && computer.equals("paper")) {
-        System.out.println("player wins");
+        System.out.println("Player wins");
       }
       
       
