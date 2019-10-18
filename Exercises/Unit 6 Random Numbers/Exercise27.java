@@ -60,7 +60,6 @@ public class Exercise27 {
         System.out.println("player wins");
       }
       
-      //fixing
 
         System.out.println("Player wins");
       }
