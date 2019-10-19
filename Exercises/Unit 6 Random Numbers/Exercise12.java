@@ -3,6 +3,7 @@ public class Exercise12 {
   public static void main(String[] args) {
     
     int random;
+    System.out.print("\033[32m");
     
     for (int i = 1; i <= 200; i++) {
       
