@@ -29,7 +29,6 @@ public class Exercise69 {
       }
       
       
-      
       System.out.println();
     }
   }
