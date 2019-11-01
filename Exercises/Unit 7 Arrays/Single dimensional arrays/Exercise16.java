@@ -41,7 +41,7 @@ public class Exercise16 {
     }
     
     if (option != 1 && option != 2) {
-      System.out.println("Wrong input try again");
+      System.out.println("Wrong input try again (1 or 2)");
     }
   }
 
