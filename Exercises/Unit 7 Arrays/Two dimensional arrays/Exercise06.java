@@ -1,15 +1,31 @@
 
-public class Exercise05 {
+
+public class Exercise06 {
   public static void main(String[] args) {
     int rows = 6;
     int cols = 10;
     int[][] numbers = new int[rows][cols];
     int max = 0;
     int min = 1000;
+    boolean repeated;
+
 
     for (int i = 0; i < rows; i++) {
       for (int j = 0; j < cols; j++) {
-        numbers[i][j] = (int) (Math.random() * ((1000 - 0) + 1)) + 0;
+
+        do {
+          numbers[i][j] = (int) (Math.random() * ((1000 - 0) + 1)) + 0;
+          repeated = false;
+          for (int k = 0; k < cols * i + j; k++) {
+            if (numbers[i][j] == numbers[k / cols][k % cols]) {
+              repeated = true;
+            }
+          }
+
+        } while (repeated);
+
+
+
         if (numbers[i][j] > max) {
           max = numbers[i][j];
         }
