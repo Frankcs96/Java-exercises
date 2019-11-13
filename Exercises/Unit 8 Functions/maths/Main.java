@@ -14,7 +14,12 @@ public class Main {
     }
     return reversed;
   }
-
+  /**
+   * Return true if the number is Palindrome false if not
+   * 
+   * @param Number that we are evaluating if is palindrome
+   * @return  True if is palindrome false if not
+   */
   public static boolean isPalindrome(long x) {
     if (reverse(x) == x) {
       return true;
