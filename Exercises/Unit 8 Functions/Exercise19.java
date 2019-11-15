@@ -21,20 +21,20 @@ public class Exercise19 {
     int option = sc.nextInt();
     System.out.print("Enter a number: ");
     int number = sc.nextInt();
-    long result = 0;
+    String result = "";
 
     switch (option) {
       case 1:
-        result = decimalToBinary(number);
+        result = decimalToBinary(number) + "";
         break;
       case 2:
-        
+        result = decimalToHexadecimal(number);
         break;
       case 3:
 
         break;
       case 4:
-        result = binaryToDecimal(number);
+        result = binaryToDecimal(number) + "";
         break;
       case 5:
 
@@ -66,7 +66,7 @@ public class Exercise19 {
         break;
     }
     
-    System.out.println("Your number converted is: ");
+    System.out.println("Your number converted is: " + result);
 
 
   }
@@ -102,8 +102,17 @@ public class Exercise19 {
     return binary;
   }
   
-  public static long decimalToHexadecimal (long n) {
-    return n;
+  public static String decimalToHexadecimal (long n) {
+    String result ="";
+    while (n > 0) {
+      result += n % 16 + "";
+      
+      n /= 16;
+      
+    }
+    
+   
+    return result;
   }
   
   public static long decimaltoOctal (long n) {
