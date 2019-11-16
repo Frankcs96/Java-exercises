@@ -19,53 +19,63 @@ public class Exercise19 {
     System.out.println("12) From octal to hexadecimal");
 
     int option = sc.nextInt();
+    sc.nextLine();
     System.out.print("Enter a number: ");
-    int number = sc.nextInt();
+    String number = sc.nextLine();
     String result = "";
-
+    long stringToNumber;
     switch (option) {
       case 1:
-        result = decimalToBinary(number) + "";
+        stringToNumber = Long.parseLong(number);
+        result = decimalToBinary(stringToNumber) + "";
         break;
       case 2:
-        result = decimalToHexadecimal(number);
+        stringToNumber = Long.parseLong(number);
+        result = decimalToHexadecimal(stringToNumber);
         break;
       case 3:
-
+        stringToNumber = Long.parseLong(number);
+        result = decimalToOctal(stringToNumber) + "";
         break;
       case 4:
-        result = binaryToDecimal(number) + "";
+        stringToNumber = Long.parseLong(number);
+        result = binaryToDecimal(stringToNumber) + "";
         break;
       case 5:
-
+        stringToNumber = Long.parseLong(number);
+        result = decimalToHexadecimal(binaryToDecimal(stringToNumber));
         break;
       case 6:
-
+        stringToNumber = Long.parseLong(number);
+        result = decimalToOctal(binaryToDecimal(stringToNumber)) + "";
         break;
       case 7:
-
+        result = hexadecimalToBinary(number.toUpperCase()) + "";
         break;
       case 8:
-
+        result = binaryToDecimal(hexadecimalToBinary(number.toUpperCase())) + "";
         break;
       case 9:
-
+        result = decimalToOctal(binaryToDecimal(hexadecimalToBinary(number.toUpperCase()))) + "";
         break;
       case 10:
-
+        stringToNumber = Long.parseLong(number);
+        result = octalToBinary(stringToNumber) + "";
         break;
       case 11:
-
+        stringToNumber = Long.parseLong(number);
+        result = binaryToDecimal(octalToBinary(stringToNumber)) + "";
         break;
       case 12:
-
+        stringToNumber = Long.parseLong(number);
+        result =  decimalToHexadecimal(binaryToDecimal(octalToBinary(stringToNumber))) + "";
         break;
 
       default:
         System.out.println("Wrong option");
         break;
     }
-    
+
     System.out.println("Your number converted is: " + result);
 
 
@@ -101,55 +111,91 @@ public class Exercise19 {
 
     return binary;
   }
-  
-  public static String decimalToHexadecimal (long n) {
-    String result ="";
+
+  public static String decimalToHexadecimal(long n) {
+    String result = "";
     while (n > 0) {
-      result += n % 16 + "";
-      
+      String division = n % 16 + "";
+
+      switch (division) {
+        case "10":
+          result += "A";
+          break;
+        case "11":
+          result += "B";
+          break;
+        case "12":
+          result += "C";
+          break;
+        case "13":
+          result += "D";
+          break;
+        case "14":
+          result += "E";
+          break;
+        case "15":
+          result += "F";
+          break;
+
+        default:
+          result += division;
+          break;
+      }
+
       n /= 16;
-      
+
+
+
     }
-    
-   
+
+    int stringSize = result.length();
+    String reversed = "";
+    for (int i = stringSize - 1; i >= 0; i--) {
+      reversed = reversed + result.charAt(i);
+    }
+
+    return reversed;
+  }
+
+  public static long decimalToOctal(long n) {
+    long result = 1;
+    while (n > 0) {
+      int division = (int) (n % 8);
+      result = maths.Main.pasteDigitBehind(result, division);
+
+      n /= 8;
+
+    }
+    result = maths.Main.reverse(result);
+    result = maths.Main.removeNumberBehind(result, 1);
+
     return result;
   }
   
-  public static long decimaltoOctal (long n) {
-    return n;
-  }
+  public static long hexadecimalToBinary(String n) {
+    String digitsHexa = "0123456789ABCDEF";
+    long binary = 0;
   
-  public static long binaryToHexadecimal (long n) {
-    return n;
-  }
+    for (int i = 0; i < n.length(); i++) {
+      binary = binary * 10000 + decimalToBinary(digitsHexa.indexOf(n.charAt(i)));
+    }
+
+    return binary;
+    
   
-  public static long binaryToOctal (long n) {
-    return n;
-  }
-  
-  public static long HexadecimalToBinary (long n) {
-    return n;
-  }
-  
-  public static long HexadecimalToDecimal (long n) {
-    return n;
-  }
-  
-  public static long HexadecimalToOctal (long n) {
-    return n;
-  }
-  
-  public static long OctalToBinary (long n) {
-    return n;
-  }
-  
-  public static long OctalToHexadecimal (long n) {
-    return n;
-  }
-  
-  public static long OctalToDecimal (long n) {
-    return n;
   }
   
   
+  public static long octalToBinary(long n) {
+    long binary = 0;
+  
+    for (int i = 0; i < maths.Main.getDigits(n); i++) {
+      binary = binary * 1000 + decimalToBinary(maths.Main.digitN(n, i));
+    }
+    
+    return binary;
+  }
+
+  
+
 }
