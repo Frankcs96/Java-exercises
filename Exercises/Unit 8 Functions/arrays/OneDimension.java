@@ -100,4 +100,23 @@ public class OneDimension {
 
     return arrayRotated;
   }
+
+  public static int[] getPrimes(int x[]) {
+    int counter = 0;
+    for (int i = 0; i < x.length; i++) {
+      if (maths.Main.isPrime(x[i])) {
+        counter++;
+      }
+    }
+    
+    int[] primes = new int [counter];
+    counter = 0;
+    for (int i = 0; i < x.length; i++) {
+      if (maths.Main.isPrime(x[i])) {
+        primes[counter++] = x[i];
+      }
+    }
+    
+    return primes;
+  }
 }
