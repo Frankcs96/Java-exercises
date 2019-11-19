@@ -108,15 +108,46 @@ public class OneDimension {
         counter++;
       }
     }
-    
-    int[] primes = new int [counter];
+
+    if (counter == 0) {
+      int[] primes = new int[1];
+      primes[0] = -1;
+      return primes;
+    }
+
+    int[] primes = new int[counter];
     counter = 0;
     for (int i = 0; i < x.length; i++) {
       if (maths.Main.isPrime(x[i])) {
         primes[counter++] = x[i];
       }
     }
-    
+
     return primes;
+  }
+
+  public static int[] getPalindromes(int x[]) {
+    int counter = 0;
+    for (int i = 0; i < x.length; i++) {
+      if (maths.Main.isPalindrome(x[i])) {
+        counter++;
+      }
+    }
+
+    if (counter == 0) {
+      int[] palindromes = new int[1];
+      palindromes[0] = -1;
+      return palindromes;
+    }
+
+    int[] palindromes = new int[counter];
+    counter = 0;
+    for (int i = 0; i < x.length; i++) {
+      if (maths.Main.isPalindrome(x[i])) {
+        palindromes[counter++] = x[i];
+      }
+    }
+
+    return palindromes;
   }
 }
