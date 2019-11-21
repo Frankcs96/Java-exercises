@@ -150,4 +150,47 @@ public class OneDimension {
 
     return palindromes;
   }
+
+  public static int[] getNumbersWith7(int x[]) {
+    int counter = 0;
+    boolean has7 = false;
+    for (int i = 0; i < x.length; i++) {
+      has7 = false;
+      for (int j = 0; j < maths.Main.getDigits(x[i]); j++) {
+        if (maths.Main.digitN(x[i], j) == 7) {
+          has7 = true;
+        }
+
+      }
+      if (has7) {
+        counter++;
+      }
+    }
+
+    if (counter == 0) {
+      int[] numbersWith7 = new int[1];
+      numbersWith7[0] = -1;
+      return numbersWith7;
+    }
+
+    int[] numbersWith7 = new int[counter];
+    counter = 0;
+    for (int i = 0; i < x.length; i++) {
+      has7 = false;
+      for (int j = 0; j < maths.Main.getDigits(x[i]); j++) {
+        if (maths.Main.digitN(x[i], j) == 7) {
+          has7 = true;
+        }
+      }
+      if (has7) {
+        numbersWith7[counter++] = x[i];
+      }
+
+
+    }
+
+    return numbersWith7;
+
+
+  }
 }
