@@ -193,4 +193,17 @@ public class OneDimension {
 
 
   }
+
+
+  public static String arrayToString(int[] a) {
+    String result = "";
+    String transform = "";
+    for (int i = 0; i < a.length; i++) {
+      transform = a[i] + "";
+      result += transform;
+    }
+
+
+    return result;
+  }
 }
