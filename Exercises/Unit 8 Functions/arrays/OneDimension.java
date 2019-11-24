@@ -206,4 +206,21 @@ public class OneDimension {
 
     return result;
   }
+
+  public static int[] concatenate(int[] a, int[] b) {
+    int[] array = new int[a.length + b.length];
+    int counter = 0;
+    
+    for (int i = 0; i < a.length; i++) {
+      array[i] = a[i];
+    }
+
+    for (int i = a.length; i < array.length; i++) {
+      
+      array[i] = b[counter];
+      counter++;
+    }
+
+    return array;
+  }
 }
