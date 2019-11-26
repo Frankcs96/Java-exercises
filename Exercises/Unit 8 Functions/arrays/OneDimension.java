@@ -210,17 +210,41 @@ public class OneDimension {
   public static int[] concatenate(int[] a, int[] b) {
     int[] array = new int[a.length + b.length];
     int counter = 0;
-    
+
     for (int i = 0; i < a.length; i++) {
       array[i] = a[i];
     }
 
     for (int i = a.length; i < array.length; i++) {
-      
+
       array[i] = b[counter];
       counter++;
     }
 
     return array;
+  }
+
+  public static int[] mix(int[] a, int[] b) {
+    int[] mixed = new int[a.length + b.length];
+    int counterA = 0;
+    int counterB = 0;
+
+    for (int i = 0; i < mixed.length; i++) {
+      if (a.length > counterA && i % 2 == 0) {
+        mixed[i] = a[counterA];
+        counterA++;
+      } else {
+        if (b.length > counterB) {
+          mixed[i] = b[counterB];
+          counterB++;
+        } else {
+          mixed[i] = a[counterA];
+          counterA++;
+        }
+
+      }
+
+    }
+    return mixed;
   }
 }
