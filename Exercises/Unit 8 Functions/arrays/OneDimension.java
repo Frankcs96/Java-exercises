@@ -247,4 +247,9 @@ public class OneDimension {
     }
     return mixed;
   }
+
+  public static int randomFromArray(int[] a) {
+    int random = (int) (Math.random() * (((a.length - 1) - 0) + 1)) + 0;
+    return a[random];
+  }
 }
