@@ -5,6 +5,6 @@ public class Exercise49 {
     Scanner sc = new Scanner(System.in);
     System.out.print("How many numbers of the look and say sequence do you want?: ");
     int number = sc.nextInt();
-
+    //TODO
   }
 }
