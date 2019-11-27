@@ -98,4 +98,18 @@ public class TwoDimensions {
 
 
   }
+
+  public static int nEsimo(int[][] n, int position) {
+    int counter = 0;
+    for (int i = 0; i < n.length; i++) {
+      for (int j = 0; j < n[0].length; j++) {
+        if (counter == position) {
+          return n[i][j];
+        }
+        counter++;
+      }
+    }
+
+    return -1;
+  }
 }
