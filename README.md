@@ -15,5 +15,5 @@ Author: <a href="https://github.com/LuisJoseSanchez">Luis José Sánchez</a>
 <a href ="https://github.com/Frankcs96/Java-exercises/tree/master/Exercises/Unit%206%20Random%20Numbers">Unit 6: Random numbers</a></br></br>
 <a href ="https://github.com/Frankcs96/Java-exercises/tree/master/Exercises/Unit%207%20Arrays">Unit 7: Arrays</a></br></br>
 <a href ="https://github.com/Frankcs96/Java-exercises/tree/master/Exercises/Unit%208%20Functions">Unit 8: Functions</a></br></br>
-<a href ="https://github.com/Frankcs96/Java-exercises/tree/master/Exercises/Unit%208%20Functions">Unit 9: Object Oriented Programming</a></br></br>
+<a href ="https://github.com/Frankcs96/Java-exercises/tree/master/Exercises/Unit%209%20Object%20Oriented%20Programming">Unit 9: Object Oriented Programming</a></br></br>
 to be continued... :clock130:
