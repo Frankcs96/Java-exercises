@@ -8,7 +8,12 @@ public class Libro extends Publicacion implements Prestable{
 
   @Override
   public void presta() {
-    this.prestado = true;
+    if(this.prestado) {
+      System.out.println("Lo siento, ese libro ya esta prestado");
+    } else {
+      this.prestado = true;
+    }
+    
   }
 
   @Override

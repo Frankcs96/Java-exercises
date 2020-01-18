@@ -17,8 +17,8 @@ public class App {
     }
     libro2.presta();
     libro2.devuelve();
-    if (!libro2.estaPrestado()) {
-      System.out.println("Lo siento, ese libro ya está prestado.");
+    if (libro2.estaPrestado()) {
+      System.out.println("El libro está prestado");
     }
     libro3.presta();
     System.out.println(libro2);
