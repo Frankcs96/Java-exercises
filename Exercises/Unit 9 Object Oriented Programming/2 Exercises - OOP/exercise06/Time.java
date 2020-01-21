@@ -31,11 +31,37 @@ public class Time {
     return newTime;
   }
 
+  public Time subtract(Time interval) {
+    Time newTime = new Time(0, 0, 0);
+
+    newTime.seconds = this.seconds - interval.seconds;
+    newTime.minutes = this.minutes - interval.minutes;
+    newTime.hours = this.hours - interval.hours;
+    if (newTime.seconds < 0) {
+      newTime.minutes--;
+      newTime.seconds = newTime.seconds + 60;
+    }
+
+    if (newTime.minutes < 0) {
+      newTime.hours--;
+      newTime.minutes = newTime.minutes + 60;
+
+    }
+
+    return newTime;
+  }
 
 
   @Override
   public String toString() {
+    if (this.hours < 0) {
+      return "Negative time";
+    } else {
 
-    return this.hours + "h" + " " + this.minutes + "m" + " " + this.seconds + "s";
+      return this.hours + "h" + " " + this.minutes + "m" + " " + this.seconds + "s";
+    }
+
   }
 }
+
+
