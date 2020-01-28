@@ -82,8 +82,10 @@ public class App {
               }
               break;
           }
-
+          
           break;
+            
+          
 
         case 2:
           //Check if array is full
