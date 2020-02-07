@@ -1,0 +1,22 @@
+.container {
+  border: 1px solid black;
+  margin-top: 15px;
+}
+
+body {
+  background: #e9f5ea;
+}
+
+#result {
+  text-align: center;
+}
+
+#gif {
+  margin: 0 auto;
+  display: block;
+}
+a {
+  margin: 0 auto;
+  display: block;
+
+}
