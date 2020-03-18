@@ -11,7 +11,7 @@ public class Exercise06 {
   public static void main(String[] args) {
 
     if (args.length != 2) {
-      System.out.println("You have to enter 2 params [FILE NAME] [WORD TO LOOK FOR]");
+      System.out.println("You have to enter 2 parameters [FILE NAME] [WORD TO LOOK FOR]");
       System.exit(-1);
     }
 
